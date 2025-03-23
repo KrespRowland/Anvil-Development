@@ -1,6 +1,42 @@
 allow_embedding: false
 correct_dependency_ids: {}
 db_schema:
+  bitcoin:
+    client: none
+    columns:
+    - admin_ui: {order: 0, width: 200}
+      name: BTC_ID
+      type: string
+    - admin_ui: {order: 1, width: 200}
+      name: BTC_Address
+      type: string
+    - admin_ui: {order: 3, width: 200}
+      name: BTC_Available
+      type: bool
+    - admin_ui: {order: 4, width: 200}
+      name: Order_ID
+      target: orders
+      type: link_single
+    server: full
+    title: Bitcoin
+  cardano:
+    client: none
+    columns:
+    - admin_ui: {order: 0, width: 200}
+      name: ADA_ID
+      type: string
+    - admin_ui: {order: 1, width: 200}
+      name: ADA_Address
+      type: string
+    - admin_ui: {order: 3, width: 200}
+      name: ADA_Available
+      type: bool
+    - admin_ui: {order: 4, width: 200}
+      name: Orders_ID
+      target: orders
+      type: link_single
+    server: full
+    title: Cardano
   contact:
     client: none
     columns:
@@ -18,6 +54,24 @@ db_schema:
       type: datetime
     server: full
     title: Contact
+  ethereum:
+    client: none
+    columns:
+    - admin_ui: {order: 0, width: 200}
+      name: ETH_ID
+      type: string
+    - admin_ui: {order: 1, width: 200}
+      name: ETH_Address
+      type: string
+    - admin_ui: {order: 3, width: 200}
+      name: ETH_Available
+      type: bool
+    - admin_ui: {order: 4, width: 200}
+      name: Order_ID
+      target: orders
+      type: link_single
+    server: full
+    title: Ethereum
   orders:
     client: none
     columns:
@@ -27,8 +81,29 @@ db_schema:
     - admin_ui: {width: 200}
       name: order
       type: simpleObject
+    - admin_ui: {order: 2, width: 200}
+      name: Order_ID
+      type: string
     server: full
     title: Orders
+  polkadot:
+    client: none
+    columns:
+    - admin_ui: {order: 0, width: 200}
+      name: DOT_ID
+      type: string
+    - admin_ui: {order: 1, width: 200}
+      name: DOT_Address
+      type: string
+    - admin_ui: {order: 3, width: 200}
+      name: DOT_Available
+      type: bool
+    - admin_ui: {order: 4, width: 200}
+      name: Orders_ID
+      target: orders
+      type: link_single
+    server: full
+    title: Polkadot
   products:
     client: search
     columns:
