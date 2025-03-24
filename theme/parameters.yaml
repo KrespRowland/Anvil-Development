@@ -1,6 +1,6 @@
 color_scheme:
   colors:
-  - {color: '#76b4e3', name: Primary 500}
+  - {color: '#624a1d', name: Primary 500}
   - {color: '#203f7c', name: Primary 700}
   - {color: '#624a1d', name: Secondary 500}
   - {color: ' #f8971d', name: Secondary 700}
