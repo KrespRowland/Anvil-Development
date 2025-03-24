@@ -23,7 +23,7 @@ components:
   - components: []
     data_bindings:
     - {code: 'self.item['''']', property: spacing, writeback: false}
-    layout_properties: {grid_position: ',TUUXQO'}
+    layout_properties: {grid_position: 'SWMWTF,LMKMJI'}
     name: transparent_box_1
     properties: {col_widths: '{}', role: transparent-box, spacing_above: none, visible: true}
     type: ColumnPanel

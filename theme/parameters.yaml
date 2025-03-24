@@ -195,7 +195,8 @@ roles:
   name: flow-flexer
 - components: []
   name: top-bottom-border
-- {name: max-width}
+- components: []
+  name: max-width
 - {name: display-responsive}
 - {name: display-none-responsive}
 - {name: left-right-padding}
